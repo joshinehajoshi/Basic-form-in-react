@@ -8,6 +8,8 @@ function App() {
     email: "",
   });
 
+  const [submitted, setSubmitted] = useState(false);
+
   const handlefirstNameInputChange = (event) => {
     setValues({...values, firstName: event.target.value})
   }
@@ -25,6 +27,7 @@ function App() {
   return (
     <div className="form-container">
       <form className="register-form">
+        {submitted ? <div className="success-messsge">Success! Thank you for registring</div> : null }
         <input
         onChange={handlefirstNameInputChange}
         value={values.firstName}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 
 function App() {
   const [values, setValues]  = useState({
@@ -15,19 +16,19 @@ function App() {
         className="form-field"
         placeholder="First name"
         name="firstName"
-        />
+        /> <br />
         <input
         value={values.lastName}
         className="form-field"
         placeholder="Last name"
         name="lastName"
-        />
+        /><br />
         <input
         value={values.email}
         className="form-field"
         placeholder="Email"
         name="email"
-        />
+        /> <br />
         <button className="form=field">
           Register
         </button>

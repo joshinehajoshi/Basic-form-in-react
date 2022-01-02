@@ -23,12 +23,15 @@ function App() {
   }
 
 
-
+const handleSubmit = (event) => {
+  event.preventDefault();
+  setSubmitted(true)
+}
 
 
   return (
     <div className="form-container">
-      <form className="register-form">
+      <form className="register-form" onSubmit={handleSubmit}>
         {submitted ? <div className="success-message">Success! Thank you for registring</div> : null }
         <input
         onChange={handlefirstNameInputChange}
@@ -51,7 +54,7 @@ function App() {
         placeholder="Email"
         name="email"
         /> <br />
-        <button className="form-field" >
+        <button className="form-field"  >
           Register
         </button>
 

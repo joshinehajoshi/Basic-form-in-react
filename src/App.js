@@ -16,6 +16,11 @@ function App() {
     setValues({...values, lastName: event.target.value})
   }
 
+  const handleEmailInputChange = (event) => {
+    setValues({...values, email: event.target.value})
+  }
+
+
 
   return (
     <div className="form-container">
@@ -35,6 +40,7 @@ function App() {
         name="lastName"
         /><br />
         <input
+        onChange={handleEmailInputChange }
         value={values.email}
         className="form-field"
         placeholder="Email"

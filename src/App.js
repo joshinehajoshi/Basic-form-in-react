@@ -8,6 +8,22 @@ function App() {
     email: "",
   });
 
+  const [submitted, setSubmitted] = useState(false);
+
+  const handlefirstNameInputChange = (event) => {
+    setValues({...values, firstName: event.target.value})
+  }
+
+  const handlelastNameInputChange = (event) => {
+    setValues({...values, lastName: event.target.value})
+  }
+
+  const handleEmailInputChange = (event) => {
+    setValues({...values, email: event.target.value})
+  }
+
+
+
   return (
     <div className="form-container">
       <form className="register-form">

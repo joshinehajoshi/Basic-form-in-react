@@ -23,3 +23,10 @@
   background-color: rgb(13, 6, 77);
   color: white;
 }
+
+.success-message {
+  margin-bottom: 1rem;
+  background-color: antiquewhite;
+  padding: 7px;
+
+}

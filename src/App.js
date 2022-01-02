@@ -8,10 +8,15 @@ function App() {
     email: "",
   });
 
+  const handlefirstNameInputChange = (event) => {
+    setValues({...values, firstName: event.target.value})
+  }
+
   return (
     <div className="form-container">
       <form className="register-form">
         <input
+        onChange={handlefirstNameInputChange}
         value={values.firstName}
         className="form-field"
         placeholder="First name"
@@ -29,7 +34,7 @@ function App() {
         placeholder="Email"
         name="email"
         /> <br />
-        <button className="form-field">
+        <button className="form-field" >
           Register
         </button>
 

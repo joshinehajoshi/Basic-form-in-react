@@ -40,7 +40,7 @@ const handleSubmit = (event) => {
         placeholder="First name"
         name="firstName"
         /> <br />
-         <span className="span-field">Please enter First Name</span> <br/>
+         {submitted && !values.firstName ? <span className="span-field">Please enter First Name</span> : null}<br/>
         <input
         onChange={handlelastNameInputChange}
         value={values.lastName}
@@ -48,7 +48,7 @@ const handleSubmit = (event) => {
         placeholder="Last name"
         name="lastName"
         /><br />
-        <span  className="span-field">Please enter Last Name</span> <br/>
+       {submitted && !values.lastName ? <span  className="span-field">Please enter Last Name</span> : null} <br/>
         <input
         onChange={handleEmailInputChange }
         value={values.email}
@@ -56,7 +56,7 @@ const handleSubmit = (event) => {
         placeholder="Email"
         name="email"
         /> <br />
-         <span  className="span-field">Please enter valid Email Address</span> <br/>
+         {submitted && !values.email ?<span  className="span-field">Please enter Email Address</span> : null } <br/>
         <button className="form-field"  >
           Register
         </button>

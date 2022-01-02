@@ -24,28 +24,34 @@ function App() {
 
 
 
+
+
   return (
     <div className="form-container">
       <form className="register-form">
+        {submitted ? <div className="success-message">Success! Thank you for registring</div> : null }
         <input
+        onChange={handlefirstNameInputChange}
         value={values.firstName}
         className="form-field"
         placeholder="First name"
         name="firstName"
         /> <br />
         <input
+        onChange={handlelastNameInputChange}
         value={values.lastName}
         className="form-field"
         placeholder="Last name"
         name="lastName"
         /><br />
         <input
+        onChange={handleEmailInputChange }
         value={values.email}
         className="form-field"
         placeholder="Email"
         name="email"
         /> <br />
-        <button className="form-field">
+        <button className="form-field" >
           Register
         </button>
 

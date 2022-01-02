@@ -3,8 +3,23 @@
   border: 2px solid black;
   width: 20%;
   margin: auto;
+  border-radius: 11px;
+  background-color: steelblue;
+  margin-top: 10rem;
 }
 
 .register-form {
   padding: 2rem;
+}
+ 
+.form-field {
+  margin-bottom: 1rem;
+  padding: 5px;
+  border: 1px black solid;
+  border-radius: 9px;
+  width: -webkit-fill-available;
+}
+.form-field:hover {
+  background-color: rgb(13, 6, 77);
+  color: white;
 }

@@ -40,6 +40,7 @@ const handleSubmit = (event) => {
         placeholder="First name"
         name="firstName"
         /> <br />
+         <span className="span-field">Please enter First Name</span> <br/>
         <input
         onChange={handlelastNameInputChange}
         value={values.lastName}
@@ -47,6 +48,7 @@ const handleSubmit = (event) => {
         placeholder="Last name"
         name="lastName"
         /><br />
+        <span  className="span-field">Please enter Last Name</span> <br/>
         <input
         onChange={handleEmailInputChange }
         value={values.email}
@@ -54,6 +56,7 @@ const handleSubmit = (event) => {
         placeholder="Email"
         name="email"
         /> <br />
+         <span  className="span-field">Please enter valid Email Address</span> <br/>
         <button className="form-field"  >
           Register
         </button>

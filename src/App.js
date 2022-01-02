@@ -29,7 +29,7 @@ function App() {
         placeholder="Email"
         name="email"
         /> <br />
-        <button className="form=field">
+        <button className="form-field">
           Register
         </button>
 

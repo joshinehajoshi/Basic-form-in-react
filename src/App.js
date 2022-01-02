@@ -12,6 +12,11 @@ function App() {
     setValues({...values, firstName: event.target.value})
   }
 
+  const handlelastNameInputChange = (event) => {
+    setValues({...values, lastName: event.target.value})
+  }
+
+
   return (
     <div className="form-container">
       <form className="register-form">
@@ -23,6 +28,7 @@ function App() {
         name="firstName"
         /> <br />
         <input
+        onChange={handlelastNameInputChange}
         value={values.lastName}
         className="form-field"
         placeholder="Last name"
